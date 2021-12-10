@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gregrafik</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h3>Gretos ūgis ir svoris</h3>
+    <canvas id="ugis" width="500" height="500"></canvas>
+    <canvas id="svoris" width="500" height="500"></canvas>
+    <script>
+      const ctx1 = document.getElementById("ugis");
+      const ugis = new Chart(ctx1, {
+        type: "line",
+        data: {
+          labels: [
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+          ],
+          datasets: [
+            {
+              label: "Ūgis",
+              data: [56, 70, 90, 105, 110, 115, 118, 122, 125, 130, 136],
+              backgroundColor: ["#fe6d73"],
+              borderColor: ["#fe6d73"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+      const ctx2 = document.getElementById("svoris");
+      const svoris = new Chart(ctx2, {
+        type: "line",
+        data: {
+          labels: [
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+          ],
+          datasets: [
+            {
+              label: "Svoris",
+              data: [2.77, 3.5, 5, 8, 10, 14, 17, 20, 24, 27, 30],
+              backgroundColor: ["#70e000"],
+              borderColor: ["#70e000"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

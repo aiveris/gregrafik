@@ -7,11 +7,10 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   background-color: azure;
-  background-color: azure;
 }
 canvas {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 380px;
+  max-height: 380px;
   margin: auto;
   padding-top: 10px;
 }

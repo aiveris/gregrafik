@@ -10,7 +10,7 @@ body {
 }
 canvas {
   max-width: 380px;
-  max-height: 350px;
+  max-height: 300px;
   margin: auto;
   padding-top: 10px;
 }
